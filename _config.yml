@@ -1,0 +1,46 @@
+baseurl: /sunnyquang
+brand:
+  email: sunnygetfitnow@gmail.com
+  name: Sunny Quang
+  phone: '+17132568541'
+  social: {skype: sunnyquang}
+color: {primary: '#222222'}
+data:
+  about:
+    paragraphs: ['Sunny is an experienced personal trainer and boxing instructor.
+        His approach focuses on teaching functional exercises for anyone interested
+        in improving mobility, sports performance, and weight loss.', 'Sunny began
+        his personal training as an MMA fighter at the age of 19. He has several MMA
+        fights under his belt and is currently being promoted by Legacy Fighting.
+        In addition to being an accomplished MMA fighter, he has training across a
+        wide spectrum of modalities including weightlifting, kettlebells, and boxing.
+        His passion for training others is motivated by the conviction that we must
+        counteract the inertia that accompanies our modern lifestyle by adopting a
+        holistic mind body approach by utilizing functional exercises to develop mobility,
+        power, and strength.', 'Sunny holds a degree from the National Personal Training
+        Institute. His personal training certifications include NASM certified, Kettlebell
+        certified, Trigger point certified, and as a Box n Burn boxing instructor.
+        Sunny teaches boxing classes on the weekends. All levels are welcomed.']
+  images:
+    certifications:
+    - {src: /sunnyquang/assets/img/certifications/3.png}
+    - {src: /sunnyquang/assets/img/certifications/2.png}
+    - {src: /sunnyquang/assets/img/certifications/1.png}
+  navbar:
+    links:
+    - {title: Home, url: /sunnyquang}
+    - {title: About Me, url: /sunnyquang/about}
+    - {title: Kickboxing, url: /sunnyquang/kickboxing}
+    - {title: Workout, url: /sunnyquang/#}
+    - {title: Blog, url: /sunnyquang/#}
+    - {title: Contact, url: /sunnyquang/contact}
+environment: development
+exclude: [Gemfile, Gemfile.lock, package.json, node_modules, webpack.config.js, requirements,
+  requirements.txt, build, Makefile, LICENSE, README.md, TODO.md]
+gems: [jekyll-seo-tag]
+lang: en
+path: {assets: /home/achilles/development/syiree/sunnyquang/assets, images: /home/achilles/development/syiree/sunnyquang/assets/img,
+  root: /home/achilles/development/syiree/sunnyquang}
+sass: {style: compressed}
+urls: {assets: /sunnyquang/assets, data: /sunnyquang/assets/data, icons: /sunnyquang/assets/img/icons,
+  images: /sunnyquang/assets/img}

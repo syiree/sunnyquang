@@ -17,18 +17,13 @@ build:
 serve:
 	jekyll serve --host=$(HOST) --port=$(PORT)
 
-clean-py:
-	find . | grep -E "__pycache__" | xargs rm -rf
-
 clean:
-	make clean-py
-
 	rm -rf _site .sass-cache _config.yml
 
 	clear
 
 prepush:
-	make build clean-py
+	make build
 
 all:
 	make clean install build serve
