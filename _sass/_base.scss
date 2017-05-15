@@ -16,6 +16,37 @@ a {
   color: $brand-bg-accent-color !important;
 }
 
+.background-primary {
+  background-color: $brand-bgcolor;
+  color: $brand-bg-color;
+
+  a {
+    color: $color-accent !important;
+
+    &:hover {
+      color: $color-accent-dark !important;
+    }
+  }
+
+  input, textarea{
+      background-color: $color-accent;
+      color: $color-primary;
+  }
+}
+
+.background-accent {
+  background-color: $brand-bgcolor-accent !important;
+  color: $brand-bg-accent-color !important;
+
+  a {
+    color: $color-primary !important;
+
+    &:hover {
+      color: $color-primary-dark !important;
+    }
+  }
+}
+
 .brand-bg-inverse {
   background-color: $brand-bgcolor-inverse;
 }

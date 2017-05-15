@@ -1,7 +1,5 @@
 $(document).ready(function ( ) {
-  /* File: fixed.js
-   * Fix shifting fixed navbar to the right
-   */
+  // Fix shifting fixed navbar to the right on show modal
   // Shamelessly taken from https://github.com/twbs/bootstrap/issues/14040#issuecomment-89720484
   var oldSSB = $.fn.modal.Constructor.prototype.setScrollbar;
   $.fn.modal.Constructor.prototype.setScrollbar = function ()
@@ -31,5 +29,5 @@ $(document).ready(function ( ) {
   $(".copyright-date").html(year);
 
   // launch subscription modal
-  $('.modal-subscription').modal('show');
+  // $('.modal-subscription').modal('show');
 });

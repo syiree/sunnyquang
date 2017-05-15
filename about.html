@@ -3,10 +3,13 @@ layout: base
 title: About
 heading: About Me
 ---
-<div class="brand-bg-accent">
+<div class="background-accent">
+  <div class="hidden-lg">
+    <img class="center-block lazy" data-original="//placehold.it/1080x720" style="width: 100%"/>
+  </div>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 visible-lg">
         <img class="center-block lazy" data-original="//placehold.it/900" style="width: 100%"/>
       </div><!-- .col-md-6 -->
       <div class="col-md-6">
@@ -19,9 +22,9 @@ heading: About Me
             </div><!-- .page-header -->
 
             {% for paragraph in site.data.about.paragraphs %}
-              <h4 class="text-justify font-light" style="line-height: 1.5em;">
+              <p class="text-justify font-light" style="line-height: 1.5em;">
                 {{ paragraph }}
-              </h4>
+              </p>
             {% endfor %}
 
           </div><!-- .panel-body -->

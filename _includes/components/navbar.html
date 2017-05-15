@@ -1,43 +1,45 @@
 <nav class="navbar navbar-default navbar-primary navbar-fixed-top no-margin">
-  <div class="wrapper brand-bg-accent">
+  <div class="background-accent">
     <div class="container-fluid">
-      <ul class="list-inline no-margin">
-        <li>
-          <a class="link-primary" href="mailto:{{ site.brand.email }}" >
-            <i class="fa fa-fw fa-envelope"></i>
-            <span class="hidden-md hidden-sm hidden-xs">
-              {{ site.brand.email }}
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="link-primary" href="tel:{{ site.brand.phone }}" target="_blank">
-            <i class="fa fa-fw fa-phone"></i>
-              <span class="hidden-md hidden-sm hidden-xs">
-                <code class="color-primary no-background">{{ site.brand.phone }}</code>
+      <div class="text-md-center">
+        <ul class="list-inline no-margin">
+          <li>
+            <a href="mailto:{{ site.brand.email }}" >
+              <i class="fa fa-fw fa-envelope"></i>
+              <span class="hidden-xs">
+                {{ site.brand.email }}
               </span>
-          </a>
-        </li>
-        <li>
-          <a class="link-primary" href="skype:{{ site.brand.social.skype }}?call" >
-            <i class="fa fa-fw fa-skype"></i>
-            <span class="hidden-md hidden-sm hidden-xs">
-              {{ site.brand.social.skype }}
-            </span>
-          </a>
-        </li>
-      </ul>
+            </a>
+          </li>
+          <li>
+            <a href="tel:{{ site.brand.phone }}" target="_blank">
+              <i class="fa fa-fw fa-phone"></i>
+                <span class="hidden-xs">
+                  <code class="color-primary no-background">{{ site.brand.phone }}</code>
+                </span>
+            </a>
+          </li>
+          <li>
+            <a href="skype:{{ site.brand.social.skype }}?call" >
+              <i class="fa fa-fw fa-skype"></i>
+              <span class="hidden-xs">
+                {{ site.brand.social.skype }}
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="container">
     <div class="navbar-header">
-      <button class="collapsed navbar-toggle no-background no-border no-shadow" data-toggle="collapse" data-target="#appBar-collapse">
+      <button class="collapsed navbar-toggle btn-primary" data-toggle="collapse" data-target="#appBar-collapse">
         <div class="text-uppercase font-bold">
           Menu
         </div>
       </button>
       <a class="navbar-brand" href="{{ site.baseurl }}">
-        <img src="{{ site.urls.images }}/brand-logo.png"/>
+        <img src="{{ site.urls.images }}/brand-logo.png" style="margin: 5px 5px"/>
       </a>
     </div>
     <div class="collapse navbar-collapse" id="appBar-collapse">
