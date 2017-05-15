@@ -1,0 +1,31 @@
+---
+layout: base
+title: About
+---
+<div class="brand-bg-accent">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <img class="center-block lazy" data-original="//placehold.it/900" style="width: 100%"/>
+      </div><!-- .col-md-6 -->
+      <div class="col-md-6">
+        <div class="panel panel-default no-background no-border no-shadow">
+          <div class="panel-body">
+            <div class="page-header no-border text-center">
+              <h2 class="text-uppercase font-heavy color-brand">
+                About Me
+              </h2>
+            </div><!-- .page-header -->
+
+            {% for paragraph in site.data.about.paragraphs %}
+              <h4 class="text-justify font-light" style="line-height: 1.5em;">
+                {{ paragraph }}
+              </h4>
+            {% endfor %}
+
+          </div><!-- .panel-body -->
+        </div><!-- .panel -->
+      </div><!-- .col-md-6 -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+</div>

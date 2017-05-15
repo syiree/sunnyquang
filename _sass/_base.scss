@@ -1,0 +1,29 @@
+.color-primary {
+  color: $color-primary !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.brand-bg {
+  background-color: $brand-bgcolor;
+  color: $brand-bg-color;
+}
+
+.brand-bg-accent {
+  background-color: $brand-bgcolor-accent !important;
+  color: $brand-bg-accent-color !important;
+}
+
+.brand-bg-inverse {
+  background-color: $brand-bgcolor-inverse;
+}
+
+.color-brand {
+  color: $color-primary;
+}
+
+.border-brand {
+  border-color: $color-primary;
+}

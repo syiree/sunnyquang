@@ -1,0 +1,11 @@
+body {
+  margin-top: 50px;
+}
+
+.link-primary {
+  color: $color-primary;
+
+  &:hover {
+    color: $color-primary-darkest;
+  }
+}
