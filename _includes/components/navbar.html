@@ -7,7 +7,7 @@
             <a href="mailto:{{ site.brand.email }}" >
               <i class="fa fa-fw fa-envelope"></i>
               <span class="hidden-xs">
-                {{ site.brand.email }}
+                <small>{{ site.brand.email }}</small>
               </span>
             </a>
           </li>
@@ -15,7 +15,9 @@
             <a href="tel:{{ site.brand.phone }}" target="_blank">
               <i class="fa fa-fw fa-phone"></i>
                 <span class="hidden-xs">
-                  <code class="color-primary no-background">{{ site.brand.phone }}</code>
+                  <code class="color-primary no-background">
+                    <small>{{ site.brand.phone }}</small>
+                  </code>
                 </span>
             </a>
           </li>
@@ -23,7 +25,7 @@
             <a href="skype:{{ site.brand.social.skype }}?call" >
               <i class="fa fa-fw fa-skype"></i>
               <span class="hidden-xs">
-                {{ site.brand.social.skype }}
+                <small>{{ site.brand.social.skype }}</small>
               </span>
             </a>
           </li>
