@@ -27,3 +27,11 @@ a {
 .border-brand {
   border-color: $color-primary;
 }
+
+.link-inverse {
+  color: $color-inverse;
+
+  &:hover {
+    color: $color-inverse-dark;
+  }
+}

@@ -4,17 +4,26 @@
       <ul class="list-inline no-margin">
         <li>
           <a class="link-primary" href="mailto:{{ site.brand.email }}" >
-            <i class="fa fa-fw fa-envelope"></i> <span class="hidden-md hidden-sm hidden-xs">{{ site.brand.email }}</span>
+            <i class="fa fa-fw fa-envelope"></i>
+            <span class="hidden-md hidden-sm hidden-xs">
+              {{ site.brand.email }}
+            </span>
           </a>
         </li>
         <li>
           <a class="link-primary" href="tel:{{ site.brand.phone }}" target="_blank">
-            <i class="fa fa-fw fa-phone"></i> <span class="hidden-md hidden-sm hidden-xs">{{ site.brand.phone }}</span>
+            <i class="fa fa-fw fa-phone"></i>
+              <span class="hidden-md hidden-sm hidden-xs">
+                <code class="color-primary no-background">{{ site.brand.phone }}</code>
+              </span>
           </a>
         </li>
         <li>
           <a class="link-primary" href="skype:{{ site.brand.social.skype }}?call" >
-            <i class="fa fa-fw fa-skype"></i> <span class="hidden-md hidden-sm hidden-xs">{{ site.brand.social.skype }}</span>
+            <i class="fa fa-fw fa-skype"></i>
+            <span class="hidden-md hidden-sm hidden-xs">
+              {{ site.brand.social.skype }}
+            </span>
           </a>
         </li>
       </ul>
@@ -34,13 +43,13 @@
     <div class="collapse navbar-collapse" id="appBar-collapse">
       <ul class="nav navbar-nav navbar-right">
         {% for link in site.data.navbar.links %}
-        <li>
-          <a href="{{ link.url }}">
-            <div class="text-uppercase">
-              {{ link.title }}
-            </div>
-          </a>
-        </li>
+          <li>
+            <a href="{{ link.url }}">
+              <span class="text-uppercase">
+                {{ link.title }}
+              </span>
+            </a>
+          </li>
         {% endfor %}
       </ul>
     </div>

@@ -52,17 +52,17 @@
             <div class="panel-body">
               <ul class="list-inline">
                 <li>
-                  <a href="{{ site.brand.social.instagram }}">
+                  <a class="link-inverse" href="{{ site.brand.social.instagram }}">
                     <i class="fa fa-fw fa-3x fa-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ site.brand.social.facebook }}">
+                  <a class="link-inverse" href="{{ site.brand.social.facebook }}">
                     <i class="fa fa-fw fa-3x fa-facebook"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="{{ site.brand.social.twitter }}">
+                  <a class="link-inverse" href="{{ site.brand.social.twitter }}">
                     <i class="fa fa-fw fa-3x fa-twitter"></i>
                   </a>
                 </li>
@@ -76,7 +76,7 @@
               <ul class="list-inline">
                 {% for link in site.data.navbar.links %}
                 <li>
-                  <a href="{{ link.url }}">
+                  <a class="link-inverse" href="{{ link.url }}">
                     <div class="text-uppercase">
                       {{ link.title }}
                     </div>
@@ -100,14 +100,14 @@
                   <div class="text-left text-md-center">
                     <small>
                       All rights reserved &copy; <span class="copyright-date"></span> -
-                        <a class="link-brand" href="{{ site.baseurl }}">{{ site.brand.name }}</a>
+                        <a class="link-inverse" href="{{ site.baseurl }}">{{ site.brand.name }}</a>
                     </small>
                   </div>
                 </div><!-- .col-md-6 -->
                 <div class="col-md-6">
                   <div class="text-right text-md-center">
                     <small>
-                      Proudly powered by <a class="link-brand text-uppercase" href="http://syiree.com" target="_blank">Syiree</a>
+                      Proudly powered by <a class="link-inverse text-uppercase" href="http://syiree.com" target="_blank">Syiree</a>
                     </small>
                   </div>
                 </div><!-- .col-md-6 -->
