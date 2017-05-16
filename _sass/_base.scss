@@ -27,11 +27,12 @@ a {
       color: $color-accent-dark !important;
     }
   }
+}
 
-  input, textarea{
-      background-color: $color-accent;
-      color: $color-primary;
-  }
+input, textarea{
+    background-color: $color-accent !important;
+    color: $color-primary !important;
+    border-color: $color-primary !important;
 }
 
 .background-accent {

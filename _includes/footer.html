@@ -36,63 +36,61 @@
 
           </div><!-- .col-md-6 -->
         </div>
-      </div>
 
-      <hr style="border-width: 5px;"/>
+        <hr style="border-width: 5px;"/>
 
-      <div class="wrapper">
-        <div class="page-header no-border">
-          <h4 class="text-center font-heavy text-uppercase">
-            Follow me on
-          </h4>
-        </div><!-- .page-header -->
+        <div class="wrapper">
+          <div class="page-header no-border">
+            <h4 class="text-center font-heavy text-uppercase">
+              Follow me on
+            </h4>
+          </div><!-- .page-header -->
 
-        <div class="text-center">
-          <div class="panel panel-default no-background no-border no-shadow no-margin">
-            <div class="panel-body">
-              <ul class="list-inline">
-                <li>
-                  <a class="link-inverse" href="{{ site.brand.social.instagram }}">
-                    <i class="fa fa-fw fa-3x fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="link-inverse" href="{{ site.brand.social.facebook }}">
-                    <i class="fa fa-fw fa-3x fa-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="link-inverse" href="{{ site.brand.social.twitter }}">
-                    <i class="fa fa-fw fa-3x fa-twitter"></i>
-                  </a>
-                </li>
-              </ul><!-- .list-inline -->
-            </div><!-- .panel-body -->
-          </div><!-- .panel -->
+          <div class="text-center">
+            <div class="panel panel-default no-background no-border no-shadow no-margin">
+              <div class="panel-body">
+                <ul class="list-inline">
+                  <li>
+                    <a class="link-inverse" href="{{ site.brand.social.instagram }}">
+                      <i class="fa fa-fw fa-3x fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="link-inverse" href="{{ site.brand.social.facebook }}">
+                      <i class="fa fa-fw fa-3x fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="link-inverse" href="{{ site.brand.social.twitter }}">
+                      <i class="fa fa-fw fa-3x fa-twitter"></i>
+                    </a>
+                  </li>
+                </ul><!-- .list-inline -->
+              </div><!-- .panel-body -->
+            </div><!-- .panel -->
 
-          <div class="panel panel-default no-background no-border no-shadow no-margin">
-            <div class="panel-body">
-              <!-- nav -->
-              <ul class="list-inline">
-                {% for link in site.data.navbar.links %}
-                <li>
-                  <a class="link-inverse" href="{{ link.url }}">
-                    <div class="text-uppercase">
-                      {{ link.title }}
-                    </div>
-                  </a>
-                </li>
-                {% endfor %}
-              </ul>
+            <div class="panel panel-default no-background no-border no-shadow no-margin">
+              <div class="panel-body">
+                <!-- nav -->
+                <ul class="list-inline">
+                  {% for link in site.data.navbar.links %}
+                  <li>
+                    <a class="link-inverse" href="{{ link.url }}">
+                      <div class="text-uppercase">
+                        {{ link.title }}
+                      </div>
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
             </div>
+
           </div>
-
         </div>
-      </div>
 
-      <!-- copyright -->
-      <div class="copyright">
-        <div class="container">
+        <!-- copyright -->
+        <div class="copyright">
           <div class="panel panel-default no-background no-border no-shadow no-margin">
             <div class="panel-body">
               <div class="row">
@@ -114,8 +112,8 @@
               </div><!-- .row -->
             </div><!-- .panel-body -->
           </div><!-- .panel -->
-        </div><!-- .container -->
-      </div><!-- .copyright -->
+        </div><!-- .copyright -->
+      </div>
     </footer>
     {% include components/modals/info.html %}
   </body>

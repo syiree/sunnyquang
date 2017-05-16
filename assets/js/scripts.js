@@ -30,4 +30,24 @@ $(document).ready(function ( ) {
 
   // launch subscription modal
   // $('.modal-subscription').modal('show');
+
+  $('form').validator().on('submit', function (event) {
+    if ( ! event.isDefaultPrevented() ) {
+      event.preventDefault();
+
+      var data      = $(this).serializeObject();
+      var sanitized = null;
+
+      $.ajax({
+        url: '',
+        data: sanitized,
+        success: function (response) {
+          
+        },
+        error: function (xhr, status, error) {
+
+        }
+      });
+    }
+  });
 });

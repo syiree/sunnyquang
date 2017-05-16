@@ -47,7 +47,7 @@ fieldset[disabled] .btn-brand.active {
 .btn-accent {
   color: $color-primary;
   background-color: $color-accent;
-  border-color: $color-accent-darkest;
+  border-color: $color-primary-darkest;
 }
 
 .btn-accent:hover,
@@ -57,7 +57,7 @@ fieldset[disabled] .btn-brand.active {
 .open .dropdown-toggle.btn-accent {
   color: $color-primary;
   background-color: $color-accent;
-  border-color: $color-accent-darkest;
+  border-color: $color-primary-darkest;
 }
 
 .btn-accent:active,
@@ -82,7 +82,7 @@ fieldset[disabled] .btn-accent:active,
 .btn-accent[disabled].active,
 fieldset[disabled] .btn-accent.active {
   background-color: $color-accent;
-  border-color: $color-accent-darkest;
+  border-color: $color-primary-darkest;
 }
 
 .btn-accent .badge {

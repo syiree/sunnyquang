@@ -1,12 +1,12 @@
-<form role="form" data-toggle="validator" id="form-contact">
+<form role="form" data-toggle="validator" id="contact">
   <div class="form-group has-feedback">
-    <label for="Name" class="control-label">Name</label>
-    <input class="form-control" name="Name" type="text" required/>
+    <label for="name" class="control-label font-light">Name</label>
+    <input class="form-control" name="name" type="text" required/>
     <div class="help-block with-errors"></div>
   </div>
   <div class="form-group has-feedback">
     <!-- formspree.io option -->
-    <label for="_replyto" class="control-label">Email</label>
+    <label for="_replyto" class="control-label font-light">Email</label>
     <input
       class="form-control"
       name="_replyto"
@@ -17,14 +17,15 @@
     <!-- end formspree.io option -->
   </div>
   <div class="form-group has-feedback">
-    <label for="Message" class="control-label">Message</label>
-    <textarea rows="5" class="form-control" name="Message" required></textarea>
+    <label for="message" class="control-label font-light">Message</label>
+    <textarea rows="5" class="form-control" name="message" required></textarea>
     <div class="help-block with-errors"></div>
   </div>
   <div class="form-group">
     <div class="text-center">
-      <button class="btn btn-default" type="submit">
-        <div class="text-uppercase font-bold">
+      <button class="btn btn-accent" type="submit">
+        <div class="text-uppercase font-bold"
+          style="padding-left: 10px; padding-right: 10px;">
           Send
         </div>
       </button>

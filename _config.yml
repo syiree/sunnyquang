@@ -22,6 +22,7 @@ data:
         certified, Trigger point certified, and as a Box n Burn boxing instructor.
         Sunny teaches boxing classes on the weekends. All levels are welcomed.']
   images:
+    carousel: []
     certifications:
     - {src: /sunnyquang/assets/img/certifications/3.png}
     - {src: /sunnyquang/assets/img/certifications/2.png}
@@ -30,8 +31,8 @@ data:
     links:
     - {title: Home, url: /sunnyquang}
     - {title: About Me, url: /sunnyquang/about}
-    - {title: Kickboxing, url: /sunnyquang/kickboxing}
-    - {title: Workout, url: /sunnyquang/#}
+    - {title: Boxing, url: /sunnyquang/boxing}
+    - {title: Training, url: /sunnyquang/training}
     - {title: Blog, url: /sunnyquang/#}
     - {title: Contact, url: /sunnyquang/contact}
 environment: development

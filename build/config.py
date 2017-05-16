@@ -56,8 +56,8 @@ CONFIG.color.primary                        = '#222222'
 CONFIG.data.navbar.links                    = [
     { "title": "Home",       "url": CONFIG.baseurl },
     { "title": "About Me",   "url": relurljoin(CONFIG.baseurl, 'about') },
-    { "title": "Kickboxing", "url": relurljoin(CONFIG.baseurl, 'kickboxing') },
-    { "title": "Workout",    "url": relurljoin(CONFIG.baseurl, '#') },
+    { "title": "Boxing",     "url": relurljoin(CONFIG.baseurl, 'boxing') },
+    { "title": "Training",   "url": relurljoin(CONFIG.baseurl, 'training') },
     { "title": "Blog",       "url": relurljoin(CONFIG.baseurl, '#') },
     { "title": "Contact",    "url": relurljoin(CONFIG.baseurl, 'contact') }
 ]
@@ -71,4 +71,9 @@ CONFIG.data.about.paragraphs                = [
 CONFIG.data.images.certifications           = [
     { "src": relurljoin(CONFIG.urls.images, 'certifications', filename) }
     for filename in os.listdir(os.path.join(CONFIG.path.images, 'certifications'))
+]
+
+CONFIG.data.images.carousel                 = [
+    { "src": relurljoin(CONFIG.urls.images, 'carousel', filename) }
+    for filename in os.listdir(os.path.join(CONFIG.path.images, 'carousel'))
 ]
