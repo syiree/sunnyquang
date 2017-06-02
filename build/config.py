@@ -33,7 +33,7 @@ CONFIG.path.images                          = os.path.join(CONFIG.path.assets,  
 
 # brand
 CONFIG.brand.name                           = 'Sunny Quang'
-CONFIG.brand.email                          = 'achillesrasquinha@gmail.com' # Only for development
+CONFIG.brand.email                          = 'syiree.official@gmail.com' # Only for development
 CONFIG.brand.phone                          = '+17132568541'
 CONFIG.brand.social.skype                   = 'sunnyquang'
 CONFIG.brand.social.facebook                = 'https://www.facebook.com/sunny.quang.1'

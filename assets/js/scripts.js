@@ -91,7 +91,9 @@ $(document).ready(function ( ) {
   $(".copyright-date").html(year);
 
   // form
-  $("form.fcontact").validator().on("submit", function (event) {
+  $("form.fconsultation, form.fcontact")
+    .validator()
+    .on("submit", function (event) {
     if ( ! event.isDefaultPrevented() ) {
       event.preventDefault();
 
