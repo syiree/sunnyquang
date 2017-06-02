@@ -1,7 +1,7 @@
     {% include scripts.html %}
     <footer class="background-primary">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row" id="consultation">
           <div class="col-md-6">
             <div class="page-header no-border">
               <h4 class="text-center font-heavy text-uppercase">
@@ -36,9 +36,11 @@
 
           </div><!-- .col-md-6 -->
         </div>
+      </div>
 
-        <hr style="border-width: 5px;"/>
+      <hr style="border-width: 5px;"/>
 
+      <div class="container-fluid">
         <div class="wrapper">
           <div class="page-header no-border">
             <h4 class="text-center font-heavy text-uppercase">
@@ -51,17 +53,17 @@
               <div class="panel-body">
                 <ul class="list-inline">
                   <li>
-                    <a class="link-inverse" href="{{ site.brand.social.instagram }}">
+                    <a target="_blank" class="link-inverse" href="{{ site.brand.social.instagram }}">
                       <i class="fa fa-fw fa-3x fa-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a class="link-inverse" href="{{ site.brand.social.facebook }}">
+                    <a target="_blank" class="link-inverse" href="{{ site.brand.social.facebook }}">
                       <i class="fa fa-fw fa-3x fa-facebook"></i>
                     </a>
                   </li>
                   <li>
-                    <a class="link-inverse" href="{{ site.brand.social.twitter }}">
+                    <a target="_blank" class="link-inverse" href="{{ site.brand.social.twitter }}">
                       <i class="fa fa-fw fa-3x fa-twitter"></i>
                     </a>
                   </li>
@@ -100,20 +102,20 @@
                       All rights reserved &copy; <span class="copyright-date"></span> -
                         <a class="link-inverse" href="{{ site.baseurl }}">{{ site.brand.name }}</a>
                     </small>
-                  </div>
+                  </div><!-- .text-left -->
                 </div><!-- .col-md-6 -->
                 <div class="col-md-6">
                   <div class="text-right text-md-center">
                     <small>
                       Proudly powered by <a class="link-inverse text-uppercase" href="http://syiree.com" target="_blank">Syiree</a>
                     </small>
-                  </div>
+                  </div><!-- .text-right -->
                 </div><!-- .col-md-6 -->
               </div><!-- .row -->
             </div><!-- .panel-body -->
           </div><!-- .panel -->
         </div><!-- .copyright -->
-      </div>
+      </div><!-- .container -->
     </footer>
     {% include components/modals/info.html %}
   </body>

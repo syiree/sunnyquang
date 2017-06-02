@@ -1,9 +1,9 @@
-<form role="form" data-toggle="validator" id="contact">
+<form role="form" data-toggle="validator" class="fcontact">
   <div class="form-group has-feedback">
     <label for="name" class="control-label font-light">Name</label>
     <input class="form-control" name="name" type="text" required/>
     <div class="help-block with-errors"></div>
-  </div>
+  </div><!-- .form-group -->
   <div class="form-group has-feedback">
     <!-- formspree.io option -->
     <label for="_replyto" class="control-label font-light">Email</label>
@@ -15,23 +15,23 @@
       required/>
     <div class="help-block with-errors"></div>
     <!-- end formspree.io option -->
-  </div>
+  </div><!-- .form-group -->
   <div class="form-group has-feedback">
     <label for="message" class="control-label font-light">Message</label>
     <textarea rows="5" class="form-control" name="message" required></textarea>
     <div class="help-block with-errors"></div>
-  </div>
+  </div><!-- .form-group -->
   <div class="form-group">
     <div class="text-center">
       <button class="btn btn-accent" type="submit">
-        <div class="text-uppercase font-bold"
-          style="padding-left: 10px; padding-right: 10px;">
+        <div class="text-uppercase font-bold">
           Send
         </div>
       </button>
     </div>
-  </div>
+  </div><!-- .form-group -->
   <!-- formspree.io options -->
+  <input type="hidden" name="_subject" value="New Message | {{ site.brand.name }} Website">
   <input type="text" name="_gotcha" style="display:none"/>
   <!-- end formspree.io options -->
-</form>
+</form><!-- form -->

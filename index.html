@@ -6,7 +6,7 @@ title: Home
 <div class="carousel slide" id="lcarousel" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="//placehold.it/1920x720" style="width: 100%;"/>
+      <img src="{{ site.urls.images }}/carousel/1.jpg" style="width: 100%;"/>
       <div class="container">
         <div class="carousel-caption">
           <div class="row">
@@ -20,33 +20,36 @@ title: Home
                       {{ site.brand.name }}
                     </h1>
                     <h4 class="text-uppercase font-bold">
-                      Get free consultation
+                      Book a consultation
                     </h4>
                   </div>
 
                   <!-- button tab -->
                   <div class="wrapper">
-                    <button class="btn btn-default">
+                    <a data-scroll href="{{ site.baseurl }}/#consultation"
+                      class="btn btn-default" style="margin: 5px;">
                       <div class="text-uppercase">
-                        Request inquiry
+                        Book now
                       </div>
-                    </button>
-                    <button class="btn btn-default">
+                    </a>
+                    <a href="tel:{{ site.brand.phone }}" target="_blank"
+                      class="btn btn-default" style="margin: 5px;">
                       <div class="text-uppercase">
                         Call now
                       </div>
-                    </button>
+                    </a>
                   </div>
+                  <!-- end button tab -->
                 </div>
-              </div>
-            </div>
-          </div>
+              </div><!-- .panel -->
+            </div><!-- .col-md-7 -->
+          </div><!-- .row -->
         </div><!-- .carousel-caption -->
       </div><!-- .container -->
     </div><!-- .item active -->
 
     <div class="item">
-      <img src="//placehold.it/1920x720" style="width: 100%;"/>
+      <img src="{{ site.urls.images }}/carousel/2.jpg" style="width: 100%;"/>
       <div class="container">
         <div class="carousel-caption">
           <div class="row">
@@ -66,16 +69,18 @@ title: Home
 
                   <!-- button tab -->
                   <div class="wrapper">
-                    <button class="btn btn-default">
+                    <a data-scroll href="{{ site.baseurl }}/#consultation"
+                      class="btn btn-default" style="margin: 5px;">
                       <div class="text-uppercase">
-                        Request inquiry
+                        Book now
                       </div>
-                    </button>
-                    <button class="btn btn-default">
+                    </a>
+                    <a data-scroll href="{{ site.baseurl }}/training"
+                      class="btn btn-default" style="margin: 5px;">
                       <div class="text-uppercase">
                         Buy now
                       </div>
-                    </button>
+                    </a>
                   </div>
                 </div><!-- .panel-body -->
               </div><!-- .panel -->
@@ -86,7 +91,7 @@ title: Home
     </div>
 
     <div class="item">
-      <img src="//placehold.it/1920x720" style="width: 100%;"/>
+      <img src="{{ site.urls.images }}/carousel/3.jpg" style="width: 100%;"/>
       <div class="container">
         <div class="carousel-caption">
           <div class="row">
@@ -101,11 +106,12 @@ title: Home
 
                   <!-- button tab -->
                   <div class="wrapper">
-                    <button class="btn btn-default">
+                    <a data-scroll href="{{ site.baseurl }}/#consultation"
+                      class="btn btn-default" style="margin: 5px;">
                       <div class="text-uppercase">
-                        Request inquiry
+                        Book now
                       </div>
-                    </button>
+                    </a>
                   </div>
                 </div><!-- .panel-body -->
               </div><!-- .panel -->

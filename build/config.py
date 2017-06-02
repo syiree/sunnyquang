@@ -33,15 +33,18 @@ CONFIG.path.images                          = os.path.join(CONFIG.path.assets,  
 
 # brand
 CONFIG.brand.name                           = 'Sunny Quang'
-CONFIG.brand.email                          = 'sunnygetfitnow@gmail.com' # Only for development
+CONFIG.brand.email                          = 'achillesrasquinha@gmail.com' # Only for development
 CONFIG.brand.phone                          = '+17132568541'
 CONFIG.brand.social.skype                   = 'sunnyquang'
+CONFIG.brand.social.facebook                = 'https://www.facebook.com/sunny.quang.1'
+CONFIG.brand.social.instagram               = ''
+CONFIG.brand.social.twitter                 = ''
 
 # URLs
 CONFIG.baseurl                              = '/sunnyquang'
-CONFIG.urls.assets                          = relurljoin(CONFIG.baseurl, 'assets')
-CONFIG.urls.data                            = relurljoin(CONFIG.urls.assets, 'data')
-CONFIG.urls.images                          = relurljoin(CONFIG.urls.assets, 'img')
+CONFIG.urls.assets                          = relurljoin(CONFIG.baseurl,    'assets')
+CONFIG.urls.data                            = relurljoin(CONFIG.urls.assets,  'data')
+CONFIG.urls.images                          = relurljoin(CONFIG.urls.assets,   'img')
 CONFIG.urls.icons                           = relurljoin(CONFIG.urls.images, 'icons')
 CONFIG.gems                                 = [
     'jekyll-seo-tag'
@@ -59,7 +62,7 @@ CONFIG.data.navbar.links                    = [
     { "title": "Boxing",     "url": relurljoin(CONFIG.baseurl, 'boxing') },
     { "title": "Training",   "url": relurljoin(CONFIG.baseurl, 'training') },
     { "title": "Blog",       "url": relurljoin(CONFIG.baseurl, '#') },
-    { "title": "Contact",    "url": relurljoin(CONFIG.baseurl, 'contact') }
+    { "title": "Contact",    "url": relurljoin(CONFIG.baseurl, 'contact.html') }
 ]
 
 CONFIG.data.about.paragraphs                = [
@@ -77,3 +80,104 @@ CONFIG.data.images.carousel                 = [
     { "src": relurljoin(CONFIG.urls.images, 'carousel', filename) }
     for filename in os.listdir(os.path.join(CONFIG.path.images, 'carousel'))
 ]
+
+CONFIG.data.training.levels.beginner        = {
+    'tagline': 'Unlock your Potential',
+       'link': relurljoin(CONFIG.baseurl, 'training', 'beginner.html'),
+   'packages': [
+        {
+                'name': 'Level 1',
+               'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
+                    'thumbnails', '1.jpg') },
+            'duration': 30,    # minutes
+            'sessions': 4,     # monthly
+           'equipment': ['gym'],
+               'price': 180,   # USD
+        },
+        {
+                'name': 'Level 2',
+               'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
+                    'thumbnails', '2.jpg') },
+            'duration': 30,
+            'sessions': 8,
+           'equipment': ['gym'],
+               'price': 360,
+        },
+        {
+                'name': 'Level 3',
+               'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
+                    'thumbnails', '3.jpg') },
+            'duration': 30,
+            'sessions': 12,
+           'equipment': ['gym'],
+               'price': 540,
+        }
+   ]
+}
+
+CONFIG.data.training.levels.intermediate       = {
+    'tagline': 'Experience the Power of Transformation',
+       'link': relurljoin(CONFIG.baseurl, 'training', 'intermediate.html'),
+    'packages': [
+        {
+                'name': 'Level 1',
+               'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
+                    'thumbnails', '1.jpg') },
+            'duration': 45,    # minutes
+            'sessions': 4,     # monthly
+           'equipment': ['gym'],
+               'price': 240,   # USD
+        },
+        {
+                'name': 'Level 2',
+               'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
+                    'thumbnails', '2.jpg') },
+            'duration': 45,
+            'sessions': 8,
+           'equipment': ['gym'],
+               'price': 480,
+            },
+            {
+                    'name': 'Level 3',
+                   'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
+                        'thumbnails', '3.jpg') },
+                'duration': 45,
+                'sessions': 12,
+                   'price': 720,
+            }
+       ]
+}
+
+CONFIG.data.training.levels.advance            = {
+    'tagline': 'Fitness beyond Limits',
+       'link': relurljoin(CONFIG.baseurl, 'training', 'advance.html'),
+   'packages': [
+        {
+                'name': 'Level 1',
+               'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
+                    'thumbnails', '1.jpg') },
+            'duration': 60,    # minutes
+            'sessions': 4,     # monthly
+           'equipment': ['gym'],
+               'price': 300,   # USD
+        },
+        {
+                'name': 'Level 2',
+               'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
+                    'thumbnails', '2.jpg') },
+            'duration': 60,
+            'sessions': 8,
+           'equipment': ['gym'],
+               'price': 600,
+        },
+        {
+                'name': 'Level 3',
+               'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
+                    'thumbnails', '3.jpg') },
+            'duration': 60,
+            'sessions': 12,
+           'equipment': ['gym'],
+               'price': 900,
+        }
+   ]
+}

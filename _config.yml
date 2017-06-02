@@ -1,9 +1,10 @@
 baseurl: /sunnyquang
 brand:
-  email: sunnygetfitnow@gmail.com
+  email: achillesrasquinha@gmail.com
   name: Sunny Quang
   phone: '+17132568541'
-  social: {skype: sunnyquang}
+  social: {facebook: 'https://www.facebook.com/sunny.quang.1', instagram: '', skype: sunnyquang,
+    twitter: ''}
 color: {primary: '#222222'}
 data:
   about:
@@ -22,11 +23,14 @@ data:
         certified, Trigger point certified, and as a Box n Burn boxing instructor.
         Sunny teaches boxing classes on the weekends. All levels are welcomed.']
   images:
-    carousel: []
+    carousel:
+    - {src: /sunnyquang/assets/img/carousel/3.jpg}
+    - {src: /sunnyquang/assets/img/carousel/1.jpg}
+    - {src: /sunnyquang/assets/img/carousel/2.jpg}
     certifications:
     - {src: /sunnyquang/assets/img/certifications/3.png}
-    - {src: /sunnyquang/assets/img/certifications/2.png}
     - {src: /sunnyquang/assets/img/certifications/1.png}
+    - {src: /sunnyquang/assets/img/certifications/2.png}
   navbar:
     links:
     - {title: Home, url: /sunnyquang}
@@ -34,14 +38,81 @@ data:
     - {title: Boxing, url: /sunnyquang/boxing}
     - {title: Training, url: /sunnyquang/training}
     - {title: Blog, url: /sunnyquang/#}
-    - {title: Contact, url: /sunnyquang/contact}
+    - {title: Contact, url: /sunnyquang/contact.html}
+  training:
+    levels:
+      advance:
+        link: /sunnyquang/training/advance.html
+        packages:
+        - duration: 60
+          equipment: [gym]
+          image: {src: /sunnyquang/assets/img/training/thumbnails/1.jpg}
+          name: Level 1
+          price: 300
+          sessions: 4
+        - duration: 60
+          equipment: [gym]
+          image: {src: /sunnyquang/assets/img/training/thumbnails/2.jpg}
+          name: Level 2
+          price: 600
+          sessions: 8
+        - duration: 60
+          equipment: [gym]
+          image: {src: /sunnyquang/assets/img/training/thumbnails/3.jpg}
+          name: Level 3
+          price: 900
+          sessions: 12
+        tagline: Fitness beyond Limits
+      beginner:
+        link: /sunnyquang/training/beginner.html
+        packages:
+        - duration: 30
+          equipment: [gym]
+          image: {src: /sunnyquang/assets/img/training/thumbnails/1.jpg}
+          name: Level 1
+          price: 180
+          sessions: 4
+        - duration: 30
+          equipment: [gym]
+          image: {src: /sunnyquang/assets/img/training/thumbnails/2.jpg}
+          name: Level 2
+          price: 360
+          sessions: 8
+        - duration: 30
+          equipment: [gym]
+          image: {src: /sunnyquang/assets/img/training/thumbnails/3.jpg}
+          name: Level 3
+          price: 540
+          sessions: 12
+        tagline: Unlock your Potential
+      intermediate:
+        link: /sunnyquang/training/intermediate.html
+        packages:
+        - duration: 45
+          equipment: [gym]
+          image: {src: /sunnyquang/assets/img/training/thumbnails/1.jpg}
+          name: Level 1
+          price: 240
+          sessions: 4
+        - duration: 45
+          equipment: [gym]
+          image: {src: /sunnyquang/assets/img/training/thumbnails/2.jpg}
+          name: Level 2
+          price: 480
+          sessions: 8
+        - duration: 45
+          image: {src: /sunnyquang/assets/img/training/thumbnails/3.jpg}
+          name: Level 3
+          price: 720
+          sessions: 12
+        tagline: Experience the Power of Transformation
 environment: development
 exclude: [Gemfile, Gemfile.lock, package.json, node_modules, webpack.config.js, requirements,
   requirements.txt, build, Makefile, LICENSE, README.md, TODO.md]
 gems: [jekyll-seo-tag]
 lang: en
-path: {assets: /home/achilles/development/syiree/sunnyquang/assets, images: /home/achilles/development/syiree/sunnyquang/assets/img,
-  root: /home/achilles/development/syiree/sunnyquang}
+path: {assets: /var/www/html/sunnyquang/assets, images: /var/www/html/sunnyquang/assets/img,
+  root: /var/www/html/sunnyquang}
 sass: {style: compressed}
 urls: {assets: /sunnyquang/assets, data: /sunnyquang/assets/data, icons: /sunnyquang/assets/img/icons,
   images: /sunnyquang/assets/img}
