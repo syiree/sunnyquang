@@ -1,6 +1,8 @@
 baseurl: /sunnyquang
 brand:
+  description: ''
   email: syiree.official@gmail.com
+  mailchimp: {APIKey: 4ef6b1c6f1b1115a59cb247029d9e574-us16}
   name: Sunny Quang
   phone: '+17132568541'
   social: {facebook: 'https://www.facebook.com/sunny.quang.1', instagram: '', skype: sunnyquang,
@@ -106,13 +108,16 @@ data:
           price: 720
           sessions: 12
         tagline: Experience the Power of Transformation
+description: ''
 environment: development
 exclude: [Gemfile, Gemfile.lock, package.json, node_modules, webpack.config.js, requirements,
   requirements.txt, build, Makefile, LICENSE, README.md, TODO.md]
 gems: [jekyll-seo-tag]
 lang: en
-path: {assets: /var/www/html/sunnyquang/assets, images: /var/www/html/sunnyquang/assets/img,
-  root: /var/www/html/sunnyquang}
+path: {assets: /home/achilles/dev/syiree/sunnyquang/assets, images: /home/achilles/dev/syiree/sunnyquang/assets/img,
+  root: /home/achilles/dev/syiree/sunnyquang}
 sass: {style: compressed}
+twitter: {username: ''}
+url: https://sunnyquang.com
 urls: {assets: /sunnyquang/assets, data: /sunnyquang/assets/data, icons: /sunnyquang/assets/img/icons,
   images: /sunnyquang/assets/img}

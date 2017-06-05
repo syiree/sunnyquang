@@ -3,7 +3,7 @@
     <label for="Name" class="control-label font-light">Name</label>
     <input class="form-control" name="Name" type="text" required/>
     <div class="help-block with-errors"></div>
-  </div>
+  </div><!-- .form-group -->
   <div class="form-group has-feedback">
     <!-- formspree.io option -->
     <label for="_replyto" class="control-label font-light">Email</label>
@@ -21,21 +21,21 @@
     <div class="wrapper">
       <div class="color-brand">
         <input class="form-control phone" name="Phone" type="tel" required/>
-      </div>
-    </div>
+      </div><!-- .color-brand -->
+    </div><!-- .wrapper -->
     <div class="help-block with-errors"></div>
-  </div>
+  </div><!-- .form-group -->
   <div class="form-group">
     <div class="text-center">
       <button class="btn btn-accent" type="submit">
         <div class="text-uppercase font-bold">
           Request
-        </div>
-      </button>
-    </div>
-  </div>
+        </div><!-- .text-uppercase -->
+      </button><!-- .btn .btn-accent -->
+    </div><!-- .text-center -->
+  </div><!-- .form-group -->
   <!-- formspree.io options -->
-  <input type="hidden" name="Subject" value="Request for Consultation">
+  <input type="hidden" name="Subject" value="Request for Consultation | {{ site.brand.name }} Website">
   <input type="text" name="_gotcha" style="display:none"/>
   <!-- end formspree.io options -->
 </form>

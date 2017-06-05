@@ -3,6 +3,8 @@
 PYTHON ?= python
 HOST    = 0.0.0.0
 PORT    = 3001
+BUILDIR = /var/www/html
+BRAND   = sunnyquang
 
 install:
 	cat requirements/*.txt > requirements.txt
@@ -14,16 +16,19 @@ install:
 build:
 	$(PYTHON) -B -m build
 
+	bundle exec jekyll build
+
+	sudo cp -R _site/* $(BUILDIR)/$(BRAND)
+
 serve:
-	jekyll serve --host=$(HOST) --port=$(PORT)
+	bundle exec jekyll serve --host=$(HOST) --port=$(PORT)
 
 clean:
+	find . | grep -E "__pycache__" | xargs rm -rf
+
 	rm -rf _site .sass-cache _config.yml
 
 	clear
-
-prepush:
-	make build
 
 all:
 	make clean install build serve
