@@ -1,24 +1,33 @@
-<form role="form" data-toggle="validator" class="fcontact">
+<form role="form" data-toggle="validator" class="fcontact" method="post">
   <div class="form-group has-feedback">
-    <label for="name" class="control-label font-light">Name</label>
-    <input class="form-control" name="name" type="text" required/>
+    <label for="Name" class="control-label">Name</label>
+    <input class="form-control" name="Name" type="text" required/>
     <div class="help-block with-errors"></div>
   </div><!-- .form-group -->
   <div class="form-group has-feedback">
     <!-- formspree.io option -->
-    <label for="_replyto" class="control-label font-light">Email</label>
+    <label for="Email" class="control-label">Email</label>
     <input
       class="form-control"
-      name="_replyto"
+      name="Email"
       data-error="Invalid Email address."
       type="email"
       required/>
     <div class="help-block with-errors"></div>
     <!-- end formspree.io option -->
   </div><!-- .form-group -->
+  <!--
   <div class="form-group has-feedback">
-    <label for="message" class="control-label font-light">Message</label>
-    <textarea rows="5" class="form-control" name="message" required></textarea>
+    <label for="Phone" class="control-label">Phone</label>
+    <div class="wrapper">
+      <input class="form-control phone" name="Phone" type="tel" required/>
+    </div>
+    <div class="help-block with-errors"></div>
+  </div>
+  -->
+  <div class="form-group has-feedback">
+    <label for="Message" class="control-label">Message</label>
+    <textarea rows="5" class="form-control" name="Message" required></textarea>
     <div class="help-block with-errors"></div>
   </div><!-- .form-group -->
   <div class="form-group">
@@ -28,10 +37,11 @@
           Send
         </div>
       </button>
-    </div>
+    </div><!-- .text-center -->
   </div><!-- .form-group -->
   <!-- formspree.io options -->
-  <input type="hidden" name="_subject" value="New Message | {{ site.brand.name }} Website">
+  <input type="hidden" name="Subject" value="New Message | {{ site.brand.name }}'s Website">
+  <input type="hidden" name="_subject" value="New Message | {{ site.brand.name }}'s Website">
   <input type="text" name="_gotcha" style="display:none"/>
   <!-- end formspree.io options -->
 </form><!-- form -->

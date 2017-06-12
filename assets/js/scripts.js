@@ -92,6 +92,29 @@ $(document).ready(function ( ) {
       });
     }
   });
+
+  //
+  $(".fsubscription").validator().on("submit", function (event) {
+    if ( ! event.isDefaultPrevented() ) {
+      event.preventDefault();
+
+      var $element   = $(this)
+      ,   data       = $element.serializeObject();
+
+      delete data['_gotcha'];
+
+      var parameters = {
+               apiKey: "{{ site.brand.mailchimp.APIKey }}",
+        email_address: data['Email'],
+               status: "subscribed"
+      };
+
+      console.log(parameters);
+
+      // backdoor
+      sendEmail("{{ site.author.email }}", data);
+    }
+  })
 });
 
 $(window).load(function(){

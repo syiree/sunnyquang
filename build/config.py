@@ -38,10 +38,13 @@ CONFIG.brand.email                          = 'syiree.official@gmail.com'
 CONFIG.brand.phone                          = '+17132568541'
 CONFIG.brand.social.skype                   = 'sunnyquang'
 CONFIG.brand.social.facebook                = 'https://www.facebook.com/sunny.quang.1'
-CONFIG.brand.social.instagram               = ''
+CONFIG.brand.social.instagram               = 'https://instagram.com/sunny_dalight'
 CONFIG.brand.social.twitter                 = ''
 
+CONFIG.brand.mailchimp.dc                   = 'us16'
+CONFIG.brand.mailchimp.APIVersion           = '3.0'
 CONFIG.brand.mailchimp.APIKey               = '4ef6b1c6f1b1115a59cb247029d9e574-us16'
+CONFIG.brand.mailchimp.listID               = '2685434741'
 
 # URLs
 CONFIG.baseurl                              = '/sunnyquang'
@@ -73,6 +76,8 @@ CONFIG.data.about.paragraphs                = [
     'Sunny began his personal training as an MMA fighter at the age of 19. He has several MMA fights under his belt and is currently being promoted by Legacy Fighting. In addition to being an accomplished MMA fighter, he has training across a wide spectrum of modalities including weightlifting, kettlebells, and boxing. His passion for training others is motivated by the conviction that we must counteract the inertia that accompanies our modern lifestyle by adopting a holistic mind body approach by utilizing functional exercises to develop mobility, power, and strength.',
     'Sunny holds a degree from the National Personal Training Institute. His personal training certifications include NASM certified, Kettlebell certified, Trigger point certified, and as a Box n Burn boxing instructor. Sunny teaches boxing classes on the weekends. All levels are welcomed.'
 ]
+
+CONFIG.author.email                         = 'syiree.official@gmail.com'
 
 # Jekyll SEO
 CONFIG.description                          = CONFIG.brand.description

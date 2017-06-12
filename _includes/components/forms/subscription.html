@@ -1,4 +1,4 @@
-<form role="form" data-toggle="validator" class="fconsultation">
+<form role="form" data-toggle="validator" class="fsubscription">
   <div class="form-group has-feedback">
     <label for="Name" class="control-label font-light">Name</label>
     <input class="form-control" name="Name" type="text" required/>
@@ -9,7 +9,7 @@
     <label for="Email" class="control-label font-light">Email</label>
     <input
       class="form-control"
-      name="_replyto"
+      name="Email"
       data-error="Invalid Email address."
       type="email"
       required/>
@@ -26,6 +26,8 @@
     </div>
   </div>
   <!-- formspree.io options -->
+  <input type="hidden" name="Subject" value="New Subscription | {{ site.brand.name }} Website">
+  <input type="hidden" name="_subject" value="New Subscription | {{ site.brand.name }} Website">
   <input type="text" name="_gotcha" style="display:none"/>
   <!-- end formspree.io options -->
 </form>
